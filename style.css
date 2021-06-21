@@ -12,6 +12,7 @@ img{
   width: 100%;
   height: auto;
 }
+
  :root{
    --header-height: 4.5rem;
    --hue: 159;
@@ -22,7 +23,6 @@ img{
    --text-color: hsl(0 0% 46%);
    --text-color-light: hsl(0 0% 98%);
    --body-color: hsl(0 0% 98%);
-
  }
 
 body{
@@ -54,7 +54,6 @@ h1{
    background: var(--base-color-alt);
  }
    
-
  .divider-1 {
    height: 1px;
    background: linear-gradient(
@@ -64,7 +63,6 @@ h1{
  }
 
  .container {
-  
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -77,8 +75,6 @@ h1{
 .section {
   padding: 5rem 0;
 }
-
-
 
 #header{
   border-bottom: 1px solid #e4e4e4;
@@ -93,16 +89,12 @@ h1{
   background-color: var(--body-color);
 }
 
-
-
-
 nav {
   height: var(--header-height);
   display: flex;
   align-items: center;
  justify-content: space-between;
  width: 100%;
- 
 }
 
 .logo{
@@ -124,7 +116,6 @@ margin-top: var(--header-height)
 
 #home .container {
   margin: 0;
-  
 }
 
 #home .image{
@@ -140,21 +131,17 @@ margin-top: var(--header-height)
   top: -16.8%;
   left: 16.7%;
   z-index: 0;
-
 }
 
 #home .image img{
   position: relative;
   right: 2.93rem;
-   
 }
 
 #home .image img,
  #home .image::before{
    border-radius: 0.25rem;
  }
-
-
 
 #home .text{
   margin-left: 1.5rem;
@@ -168,5 +155,4 @@ margin-top: var(--header-height)
 
 #home .text p{
   margin-bottom: 2rem;
-  
 }
