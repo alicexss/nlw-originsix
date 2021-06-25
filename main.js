@@ -19,15 +19,19 @@ for (const link of links) {
 }
 
 /* mudar o header da pagina quando der scroll */
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
+}
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
 })
 
 /* Testemunhas carrosel */
@@ -64,11 +68,19 @@ scrollReveal.reveal(
 
 /* Botao voltar para o topo */
 
-const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', function () {
+function bachToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
   if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
   }
+}
+
+/* When Scroll */
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  bachToTop()
 })
